@@ -31,6 +31,16 @@ nav {
   display: none;
 }
 
-li {
+.list-links {
+  list-style: none;
+  font-family: "Montserrat";
+}
+
+list-links li {
+  margin-bottom: 16px 0;
+}
+s
+.list-links li a {
   color: var(--text-secondary-color);
+  text-decoration: none;
 }
