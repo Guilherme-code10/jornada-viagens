@@ -1,7 +1,51 @@
+.destinations {
+  margin-top: 64px;
+}
+
 .destinations .item header {
   display: block;
   background-color: transparent;
   position: static;
   padding: 0;
   margin-bottom: 24px;
+}
+
+/* Container dos cards */
+.destination-items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.destinations .item {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.destinations .item img {
+  width: 100%;
+  display: block;
+}
+
+.destinations .item h4 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 16px 0;
+}
+
+.destinations .item p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.destinations .item footer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .destinations .item {
+    width: 648px;
+  }
 }
