@@ -1,4 +1,9 @@
+.caregories{
+    margin-bottom: 80px;
+}
+
 .categories-cards {
+
   display: flex;
   flex-direction: column;
   align-items: center;
