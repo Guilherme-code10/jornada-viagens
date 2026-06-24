@@ -17,10 +17,6 @@
 }
 
 .offers-cards .card header {
-  display: block;
-  background-color: transparent;
-  position: static;
-  padding: 0;
   margin-bottom: 24px;
 }
 
@@ -57,7 +53,7 @@
 }
 
 .offers-cards .card.manaus {
-  background: url("../img/bd-card-manaus.jpg") no-repeat;
+  background: url("../img/bg-card-manaus.jpg") no-repeat;
   background-size: cover;
 }
 
