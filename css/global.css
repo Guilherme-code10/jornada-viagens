@@ -63,6 +63,7 @@ section.hero {
 .content-title{
   font-size: 28px;
   font-weight: var(--title-weight);
+  margin: 0 0 24px;
 }
 
 .content-text{
@@ -102,7 +103,7 @@ section.hero {
 @media screen and (min-width: 1024px) {
   section {
     width: 900px;
-    margin: auto;
+    margin: 0 auto 88;
   }
   
   .button:hover {
