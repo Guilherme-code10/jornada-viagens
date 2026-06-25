@@ -60,6 +60,17 @@ section.hero {
   margin: 16px auto 32px;
 }
 
+.content-title{
+  font-size: 28px;
+  font-weight: var(--title-weight);
+}
+
+.content-text{
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
+
 .button {
   min-width: 280px;
   height: 64px;
@@ -75,7 +86,7 @@ section.hero {
 
 @media screen and (min-width: 768px) {
   section {
-    width: 648px;
+    width: 666px;
   }
 
   .section-title{
@@ -86,9 +97,6 @@ section.hero {
   .section-title h2 {
     font-size: 32px;
   }
-  section.offers {
-    width: 666px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -96,6 +104,7 @@ section.hero {
     width: 900px;
     margin: auto;
   }
+  
   .button:hover {
     background-color: var(--primary-color);
   }
