@@ -2,7 +2,8 @@
 
 .hero .hero-img,
 .packages-hero .hero-img,
-.bottom-hero .hero-img {
+.bottom-hero .hero-img,
+.packages-bottom-hero .hero-img {
     width: 100%;
     height: 400px;
 }
@@ -83,6 +84,18 @@
     background-size: cover;
 }
 
+/* ================= HERO RODAPÉ PACKAGES ================= */
+
+.packages-bottom-hero {
+    width: 100%;
+    margin: 0;
+}
+
+.packages-bottom-hero .hero-img {
+    background: url("../img/packages-bottom-hero-mobile.jpg") no-repeat center;
+    background-size: cover;
+}
+
 /* ================= TABLET ================= */
 
 @media screen and (min-width: 768px) {
@@ -129,6 +142,16 @@
     }
 }
 
+.packages-bottom-hero {
+    width: 100%;
+    margin: 0;
+}
+
+.packages-bottom-hero .hero-img {
+    background: url("../img/packages-bottom-hero-tablet.jpg") no-repeat center;
+    background-size: cover;
+}
+
 /* ================= DESKTOP ================= */
 
 @media screen and (min-width: 1024px) {
@@ -163,7 +186,12 @@
         background: url("../img/bottom-hero-desktop.jpg") no-repeat center;
         background-size: cover;
     }
-
+     .packages-bottom-hero .hero-img {
+        height: 600px;
+        background: url("../img/packages-bottom-hero-tablet.jpg") no-repeat center;
+        background-size: cover;
+    }
+                
     .hero h2 {
         padding: 88px 120px;
     }
