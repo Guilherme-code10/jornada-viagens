@@ -1,0 +1,107 @@
+.destinations-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ===== Mobile ===== */
+
+.excursion-destinations .item {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.excursion-destinations .item .img-item {
+  width: 100%;
+  height: 368px;
+}
+
+.excursion-destinations .item.tokyo .img-item {
+  background: url("../img/Tokyo-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.excursion-destinations .item.osaka .img-item {
+  background: url("../img/Osaka-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.excursion-destinations .item header h4 {
+  margin: 24px 0;
+}
+
+.excursion-destinations .item p {
+  margin-bottom: 24px;
+}
+
+.excursion-destinations .button {
+  width: 100%;
+}
+
+/* ===== Tablet ===== */
+
+@media screen and (min-width: 768px) {
+
+  .excursion-destinations {
+    width: 648px;
+  }
+
+  .excursion-destinations .item {
+    width: 648px;
+  }
+
+  .excursion-destinations .item .img-item {
+    height: 452px;
+  }
+
+  .excursion-destinations .item.tokyo .img-item {
+    background: url("../img/Tokyo-tablet-desktop.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .excursion-destinations .item.osaka .img-item {
+    background: url("../img/Osaka-tablet-desktop.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .excursion-destinations .button {
+    width: 280px;
+  }
+}
+
+/* ===== Desktop ===== */
+
+@media screen and (min-width: 1024px) {
+
+  .excursion-destinations {
+    width: 900px;
+  }
+
+  .excursion-destinations .item {
+    width: 900px;
+  }
+
+  .excursion-destinations .item .img-item {
+    height: 452px;
+  }
+}
+
+/* ===== Desktop Grande ===== */
+
+@media screen and (min-width: 1440px) {
+
+  .excursion-destinations {
+    width: 1200px;
+  }
+
+  .destinations-items {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .excursion-destinations .item {
+    width: 588px;
+  }
+}

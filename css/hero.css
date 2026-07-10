@@ -28,34 +28,36 @@
 
 .packages-hero {
     width: 100%;
-    margin: 0;
+    margin: 0 0 88px;
 }
 
-.packages-hero .hero-img {
-    background: url("../img/packages-hero-mobile.jpg") no-repeat center;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
+.packages-hero .hero-img{
+    position: relative;
+    height: 400px;
+    background: url("../img/packages-hero-mobile.jpg") center/cover no-repeat;
 }
-
-.packages-hero .hero-content {
+.packages-hero .packages-content {
     color: var(--text-secondary-color);
     padding: 0 24px;
     max-width: 320px;
+    position: absolute;
+    top: 55px;
+    left: 24px;
+    right: 24px
 }
 
 .packages-hero h1 {
-    font-size: 56px;
+    font-size: 48px;
     font-weight: var(--title-weight);
     font-family: "Montserrat";
     line-height: 1.1;
     margin: 0;
     color: var(--text-secondary-color);
+    padding: 0;
 }
 
 .packages-hero hr {
-    width: 180px;
+    width: 160px;
     height: 4px;
     border: none;
     background-color: var(--primary-color);
@@ -97,7 +99,7 @@
         background-size: cover;
     }
 
-    .packages-hero .hero-content {
+    .packages-hero .packages-content {
         padding: 0 60px;
         max-width: 520px;
     }
@@ -143,7 +145,7 @@
         background-size: cover;
     }
 
-    .packages-hero .hero-content {
+    .packages-hero .packages-content {
         padding-left: 120px;
         max-width: 620px;
     }
@@ -175,7 +177,7 @@
         padding: 88px 160px;
     }
 
-    .packages-hero .hero-content {
+    .packages-hero .packages-content {
         padding-left: 160px;
     }
 }
