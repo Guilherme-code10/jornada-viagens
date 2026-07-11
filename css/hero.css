@@ -2,6 +2,7 @@
 
 .hero .hero-img,
 .packages-hero .hero-img,
+.hero-blog .hero-img,
 .bottom-hero .hero-img,
 .packages-bottom-hero .hero-img {
     width: 100%;
@@ -72,6 +73,53 @@
     color: var(--text-secondary-color);
 }
 
+/* ================= HERO BLOG ================= */
+
+.blog-hero {
+    width: 100%;
+    margin: 0 0 88px;
+}
+
+.blog-hero .hero-img{
+    position: relative;
+    height: 400px;
+    background: url("../img/blog-hero-mobile.jpg") center/cover no-repeat;
+}
+.blog-hero .blog-content {
+    color: var(--text-secondary-color);
+    padding: 0 24px;
+    max-width: 320px;
+    position: absolute;
+    top: 55px;
+    left: 24px;
+    right: 24px
+}
+
+.blog-hero h1 {
+    font-size: 48px;
+    font-weight: var(--title-weight);
+    font-family: "Montserrat";
+    line-height: 1.1;
+    margin: 0;
+    color: var(--text-secondary-color);
+    padding: 0;
+}
+
+.blog-hero hr {
+    width: 160px;
+    height: 4px;
+    border: none;
+    background-color: var(--primary-color);
+    margin: 24px 0 32px;
+}
+
+.blog-hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-secondary-color);
+}
+
 /* ================= HERO RODAPÉ ================= */
 
 .bottom-hero {
@@ -126,6 +174,30 @@
     }
 
     .packages-hero p {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+        .blog-hero .hero-img {
+        height: 620px;
+        background: url("../img/blog-hero-tablet.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .blog-hero .blog-content {
+        padding: 0 60px;
+        max-width: 520px;
+    }
+
+    .blog-hero h1 {
+        font-size: 72px;
+    }
+
+    .blog-hero hr {
+        width: 240px;
+    }
+
+    .blog-hero p {
         font-size: 28px;
         line-height: 1.5;
     }
