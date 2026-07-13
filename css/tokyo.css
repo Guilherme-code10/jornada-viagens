@@ -1,0 +1,161 @@
+.tokyo-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ================= MOBILE ================= */
+
+.tokyo-blog .item {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.tokyo-blog .item .img-item {
+  width: 100%;
+  height: 368px;
+  margin-top: 24px;
+}
+
+/* Imagem da Chegada */
+
+.tokyo-blog .item.tokyo .img-item {
+  background: url("../img/tokyo-blog-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* Imagem da Acomodação */
+
+.tokyo-blog .item.acomodacao .img-item {
+  background: url("../img/Tokyo-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.img-caption {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tokyo-blog .item header h4 {
+  margin-bottom: 24px;
+}
+
+.tokyo-blog .item p {
+  margin-bottom: 24px;
+}
+
+.tokyo-blog .button {
+  width: 100%;
+}
+
+/* ================= TABLET ================= */
+
+@media screen and (min-width: 768px) {
+
+  .tokyo-blog {
+    width: 648px;
+  }
+
+  .tokyo-blog .item {
+    width: 648px;
+  }
+
+  /* Card Chegada */
+
+  .tokyo-blog .item.tokyo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .tokyo-blog .item.tokyo .text-content {
+    flex: 1;
+  }
+
+  .tokyo-blog .item.tokyo .image-content {
+    width: 312px;
+    flex-shrink: 0;
+  }
+
+  .tokyo-blog .item.tokyo .img-item {
+    width: 100%;
+    height: 360px;
+    margin-top: 0;
+    background: url("../img/tokyo-blog-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  /* Card Acomodação */
+
+  .tokyo-blog .item.acomodacao .img-item {
+    height: 452px;
+    background: url("../img/Tokyo-blog-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .img-caption {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* ================= DESKTOP ================= */
+
+@media screen and (min-width: 1024px) {
+
+  .tokyo-blog {
+    width: 900px;
+  }
+
+  .tokyo-blog .item {
+    width: 900px;
+  }
+
+  .tokyo-blog .item.tokyo {
+    gap: 48px;
+  }
+
+  .tokyo-blog .item.tokyo .image-content {
+    width: 360px;
+  }
+
+  .tokyo-blog .item.tokyo .img-item {
+    width: 100%;
+    height: 420px;
+  }
+
+  .tokyo-blog .item.acomodacao .img-item {
+    height: 520px;
+  }
+}
+
+/* ================= DESKTOP GRANDE ================= */
+
+@media screen and (min-width: 1440px) {
+
+  .tokyo-blog {
+    width: 1200px;
+  }
+
+  .tokyo-blog .item {
+    width: 1200px;
+  }
+
+  .tokyo-blog .item.tokyo {
+    gap: 64px;
+  }
+
+  .tokyo-blog .item.tokyo .image-content {
+    width: 420px;
+  }
+
+  .tokyo-blog .item.tokyo .img-item {
+    width: 100%;
+    height: 480px;
+  }
+}
