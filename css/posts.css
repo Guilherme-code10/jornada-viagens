@@ -1,0 +1,122 @@
+.posts-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ================= MOBILE ================= */
+
+.posts-blog .item {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.posts-blog .item .img-item {
+  width: 100%;
+  height: 368px;
+}
+
+.posts-blog .item.osaka .img-item {
+  background: url("../img/Osaka-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.posts-blog .item.hiroshima .img-item {
+  background: url("../img/hiroshima-blog-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.posts-blog .item.kyoto .img-item {
+  background: url("../img/Kyoto-blog-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.posts-blog .item header h4 {
+  margin: 24px 0;
+}
+
+.posts-blog .item p {
+  margin-bottom: 24px;
+}
+
+.posts-blog .button {
+  width: 100%;
+}
+
+/* ================= TABLET ================= */
+
+@media screen and (min-width: 768px) {
+
+  .posts-blog .item {
+    width: 648px;
+  }
+
+  .posts-blog .item .img-item {
+    height: 300px;
+  }
+
+  .posts-blog .item.osaka .img-item {
+    background: url("../img/Osaka-blog-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .posts-blog .item.hiroshima .img-item {
+    background: url("../img/Hiroshima-blog-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .posts-blog .item.kyoto .img-item {
+    background: url("../img/Kyoto-blog-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .posts-blog .button {
+    width: 280px;
+  }
+}
+
+
+/* ================= DESKTOP GRANDE ================= */
+
+@media screen and (min-width: 1440px) {
+
+  .posts-items {
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    gap: 24px;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .posts-blog .item {
+    width: 384px;
+    min-height: 755px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posts-blog .item header {
+    margin-bottom: 24px;
+  }
+
+  .posts-blog .item .content-text {
+    flex: 1;
+  }
+
+  .posts-blog footer {
+    margin-top: auto;
+  }
+
+  .posts-blog .item .img-item {
+    width: 100%;
+    height: 280px;
+  }
+
+  .posts-blog .button {
+    width: 280px;
+  }
+}
