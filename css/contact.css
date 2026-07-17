@@ -4,6 +4,15 @@
   gap: 32px;
 }
 
+.contact-form label {
+  display: block;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  color: #9e9e9e;
+  margin-bottom: -20px;
+}
+
 .contact-form input {
   width: 100%;
   padding: 0 0 12px;
@@ -14,33 +23,27 @@
 
   font-family: "Montserrat";
   font-size: 20px;
-}
-
-.contact-form input::placeholder {
-  color: #9e9e9e;
+  font-weight: var(--text-weight);
+  color: var(--text-primary-color);
 }
 
 .contact-form input:focus {
   border-bottom: 2px solid var(--primary-color);
 }
 
-.contact-form label {
-  font-size: 20px;
-  color: #9e9e9e;
-  margin-bottom: -18px;
-}
-
 .contact-form textarea {
   width: 100%;
   height: 140px;
+  padding: 16px;
   border: 2px solid #d9d9d9;
   border-radius: 8px;
-  padding: 16px;
-  resize: none;
   outline: none;
+  resize: vertical;
 
   font-family: "Montserrat";
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  color: var(--text-primary-color);
 }
 
 .contact-form textarea:focus {
@@ -50,8 +53,21 @@
 .contact-form .button {
   width: 100%;
   height: 72px;
-  line-height: 72px;
   margin-top: 8px;
+
   font-size: 20px;
   font-weight: var(--title-weight);
+  line-height: 72px;
+}
+
+.error-message {
+  display: none;
+  color: #b81515;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+input:invalid:not(:placeholder-shown) + .error-message,
+input:invalid:focus + .error-message {
+  display: block;
 }
