@@ -191,6 +191,19 @@
   background-size: cover;
 }
 
+/* ================= HERO RODAPÉ CONTACT ================= */
+
+.contact-bottom-hero {
+  width: 100%;
+  margin: 0;
+}
+
+.contact-bottom-hero .hero-img {
+  background: url("../img/contact-bottom-hero-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
+
+
 /* ================= TABLET ================= */
 
 @media screen and (min-width: 768px) {
@@ -202,7 +215,7 @@
 
   .packages-hero .hero-img {
     height: 620px;
-    background: url("../img/packages-hero-tablet.jpg") no-repeat center;
+    background: url("../img/contact-bottom-hero-tablet-desktop.jpg") no-repeat center;
     background-size: cover;
   }
 
@@ -294,6 +307,17 @@
   background-size: cover;
 }
 
+.contact-bottom-hero {
+  width: 100%;
+  margin: 0;
+}
+
+   .contact-bottom-hero .hero-img {
+    height: 600px;
+    background: url("../img/contact-bottom-hero-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
 /* ================= DESKTOP ================= */
 
 @media screen and (min-width: 1024px) {
@@ -349,6 +373,12 @@
   .packages-bottom-hero .hero-img {
     height: 600px;
     background: url("../img/packages-bottom-hero-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+    .contact-bottom-hero .hero-img {
+    height: 600px;
+    background: url("../img/contact-bottom-hero-desktop.jpg") no-repeat center;
     background-size: cover;
   }
 
