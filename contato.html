@@ -66,7 +66,7 @@
       </div>
     </section>
 
-    <section class="contact-form">
+    <section class="contact-section">
       <div class="section-title">
         <h2>Preencha o formulário:</h2>
         <hr />
@@ -74,21 +74,16 @@
       <article class="item contact">
         <div class="text-content">
           <p class="content-text">
-            menu Entre em contato! Dúvidas, sugestões, problemas para resolver?
-            Temos uma equipe de plantão para ajudar você! Preencha o formulário:
             Temos uma equipe sempre em prontidão para resolver suas dúvidas,
             problemas, trazer dicas e orientações objetivas para tornar sua
             experiência o mais prazerosa e tranquila possível. Preencha seus
             dados que vamos retornar seu contato conforme a urgência do seu
-            chamado. Pode confiar! Seu nome Telefone Email Assunto Assunto
-            Enviar! Horário de atendimento: 08h - 20h (Segunda a Sábado)
-            Desenvolvido por Alura. Projeto fictício sem fins comerciais. Acesse
-            nossas redes:
+            chamado. Pode confiar!
           </p>
         </div>
       </article>
 
-      <form class="contact-form">
+      <form class="contact-form" novalidate>
         <label for="name">Seu nome</label>
         <input type="text" id="name" name="userName" required />
 
@@ -97,8 +92,9 @@
           type="tel"
           id="phoneNumber"
           name="userPhone"
-          aria-describedby="phoneHelp"
+          placeholder=" "
           pattern="[0-9]{11}"
+          required
         />
         <small id="phoneHelp" class="error-message">
           Digite 11 números (DDD + telefone), sem espaços ou hífens.
